@@ -1,0 +1,126 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: none; /* Removido o gradiente para usar o fundo preto das partículas */
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #151515; /* Fundo preto para as partículas */
+  z-index: -1; /* Partículas ficam atrás do conteúdo */
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* Animações */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Apresentação */
+#apresentacao p {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+#apresentacao p.expandido {
+  max-height: 500px;
+}
+
+button {
+  background: #ff1493;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Equipe */
+.equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.equipe-card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.equipe-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Vídeo */
+#video video {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#play-pause {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Contador de partículas (opcional) */
+.js-count-particles {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+}
