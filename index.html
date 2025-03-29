@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <header class="fade-in">
+        <h1>nome da musica</h1>
+    </header>
+
+    <section id="apresentacao" class="slide-up">
+        <h2>Apresentação</h2>
+        <p>Aqui vai a história da minha música. [no futuro eu coloco]</p>
+        <button id="toggle-apresentacao">Mostrar Mais</button>
+    </section>
+
+    <section id="equipe" class="slide-up">
+        <h2>Equipe</h2>
+        <div class="equipe-grid">
+            <div class="equipe-card">Lucas Bento - MC</div>
+            <div class="equipe-card">Lucca - Beatmaker</div>
+            <div class="equipe-card">Lucca - Hype Man</div>
+            <div class="equipe-card">Lucca - Engenheiro de som</div>
+            <div class="equipe-card">Lucca - Desenvolvedor do site</div>
+            <div class="equipe-card">Davi Lucca - Personagem do clipe</div>
+            <div class="equipe-card">Clara,Gabriela,Sofia T,Isabelle - Letristas</div>
+        </div>
+    </section>
+
+    <section id="video" class="slide-up">
+        <h2>O Clipe</h2>
+        <video id="meu-video" controls>
+            <source src="minha-musica.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+        </video>
+        <button id="play-pause">Play/Pause</button>
+    </section>
+
+    <div class="js-count-particles"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stats.js@0.17.0/build/stats.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
